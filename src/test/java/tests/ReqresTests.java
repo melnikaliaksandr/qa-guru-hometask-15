@@ -1,13 +1,16 @@
 package tests;
 
+import request.TestProvider;
 import io.restassured.response.Response;
 import model.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+@ExtendWith(TestProvider.class)
 public class ReqresTests extends TestBase {
 
     @Test
